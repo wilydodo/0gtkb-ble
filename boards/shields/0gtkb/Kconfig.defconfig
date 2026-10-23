@@ -1,0 +1,6 @@
+if SHIELD_0GTKB
+
+config ZMK_KEYBOARD_NAME
+    default "0gtkb"
+
+endif
