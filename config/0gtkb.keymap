@@ -3,29 +3,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-
-
-
-
-
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10
-
-&mmv {
-    time-to-max-speed-ms = <250>;
-    acceleration-exponent = <1>;
-};
-
-&msc {
-    time-to-max-speed-ms = <300>;
-    acceleration-exponent = <0>;
-};
-
-
-
-
-
-
 
 / {
     keymap {
@@ -44,7 +23,7 @@
             bindings = <
 &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &kp N6  &kp N7     &kp N8     &kp N9    &kp N0      &kp MINUS  &kp EQUAL
 &kp TAB    &none     &none     &none      &none   &none   &none      &none      &kp LBKT  &kp RBKT    &kp BSLH
-&kp LSHFT  &none     &none     &none      &none   &none   &none      &kp COMMA  &kp DOT   &kp FSLH    &none
+&kp LSHFT  &none     &none     &none      &none   &none   &none      &kp COMMA  &kp DOT   &kp FSLH    &mo 3
 &kp LALT   &kp LALT  &kp LGUI  &kp SPACE          &none   &kp SPACE             &kp RALT  &kp C_MENU  &kp RCTRL
             >;
         };
